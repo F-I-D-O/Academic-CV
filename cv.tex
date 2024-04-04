@@ -20,6 +20,9 @@
 % A4 paper size by default, use 'letterpaper' for US letter
 \documentclass[11pt, a4paper]{awesome-cv}
 
+\usepackage{hyperref}
+\usepackage{relsize} % for the \relsize command used in the \CC command
+
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
@@ -43,6 +46,13 @@
 
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+% Command adds an icon to the end of links.
+\newcommand{\hrefs}[2]{\href{#1}{#2 \faExternalLink*}}
+
+\newcommand{\CC}{{\tm C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}} % C++ 
+
+\newfontfamily\tm{Times New Roman} % Nastaví proměnou fb na písmo Computer Modern Roman 10 (pro sharp) 
 
 
 %-------------------------------------------------------------------------------
@@ -97,7 +107,9 @@
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
 \input{cv/education.tex}
-\input{cv/skills.tex}
+\input{cv/projects.tex}
+\input{cv/tools.tex}
+% \input{cv/skills.tex}
 \input{cv/experience.tex}
 \input{cv/extracurricular.tex}
 \input{cv/honors.tex}

@@ -7,6 +7,9 @@
 *.fls
 *.out
 *.toc
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
 
 ## Intermediate documents:
 *.dvi
@@ -20,4 +23,7 @@
 ### Mac OS X ###
 ## Mac OS X metadata files:
 *.DS_Store
+
+# main pdf file
+cv.pdf
 

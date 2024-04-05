@@ -22,6 +22,8 @@
 
 \usepackage{hyperref}
 \usepackage{relsize} % for the \relsize command used in the \CC command
+\usepackage[style=apa]{biblatex}
+\usepackage{siunitx} 
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -53,6 +55,8 @@
 \newcommand{\CC}{{\tm C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}} % C++ 
 
 \newfontfamily\tm{Times New Roman} % Nastaví proměnou fb na písmo Computer Modern Roman 10 (pro sharp) 
+
+\addbibresource{my_publications.bib}
 
 
 %-------------------------------------------------------------------------------
@@ -110,6 +114,8 @@
 \input{cv/projects.tex}
 \input{cv/tools.tex}
 % \input{cv/skills.tex}
+\input{cv/publications.tex}
+\input{cv/teaching.tex}
 \input{cv/experience.tex}
 \input{cv/extracurricular.tex}
 \input{cv/honors.tex}
